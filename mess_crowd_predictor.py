@@ -24,7 +24,7 @@ model = RandomForestClassifier( n_estimators=200, random_state=42)
 model.fit(X_train, y_train)
 y_pred = model.predict(X_test)
 
-# print(model.score(X_test, y_test))
+print(model.score(X_test, y_test))
 
 day = input("Enter day of the week (e.g., Monday): ")
 meal = input("Enter meal type (e.g., Lunch, Dinner): ")
